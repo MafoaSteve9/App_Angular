@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-pokemons {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.card-pokemon {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.11);
+    -moz-box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.11);
+    box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.11);
+    background-color: whitesmoke;
+}
+li {
+    list-style: none;
+}
+/* 2h19min */
