@@ -3,8 +3,8 @@
 <div class="container">
     <div class="row">
             @for (pokemon of pokemonList; track pokemon.name) {
-            <div class="col m4 s6" appBorderCard>
-                <div class="card horizontal">
+            <div class="col m4 s6">
+                <div class="card horizontal" (click)="selectPokemon(pokemon.id)" appBorderCard>
                     <div class="card-image">
                         <img [src]="pokemon.picture" [alt]="pokemon.name"/>
                     </div>
