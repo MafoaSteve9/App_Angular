@@ -9,10 +9,12 @@ export class BorderCardDirective {
   private initialColor: string = '#f5f5f5';
   private defaultColor: string = '#009688';
   private defaultHeight: number = 180;
+  private defaultRadius: number = 10;
 
   constructor(private el: ElementRef) {
     this.setHeight(this.defaultHeight);
     this.setBorder(this.initialColor);
+    this.setBorderadius(this.defaultRadius)
    }
 
    @Input('appBorderCard') borderColor: string;
@@ -31,5 +33,9 @@ export class BorderCardDirective {
 
   setBorder(border: string) {
     this.el.nativeElement.style.border = `solid 4px ${border}`;
+  }
+
+  setBorderadius(borderRadius: number) {
+    this.el.nativeElement.style.borderRadius = `${borderRadius}px`
   }
 }
