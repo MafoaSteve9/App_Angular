@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { POKEMONS } from './mock-pokemon-list';
 import { Pokemon } from './pokemon';
+import { BorderCardDirective } from './border-card.directive';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.component.html',
+  imports: [BorderCardDirective]
 })
 export class AppComponent implements OnInit {
   pokemonList: Pokemon[] = POKEMONS;
@@ -16,7 +18,7 @@ export class AppComponent implements OnInit {
       console.table(this.pokemonList);
   }
 
-  selectPokemon(pokemonId: string) {
+  selectPokemon(pokemonId: number) {
     const pokemon: Pokemon|undefined = this.pokemonList.find(pokemon => pokemon.id == +pokemonId)
 
     if (pokemon) {
