@@ -27,4 +27,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-@Directive : Utilisation de directives qui nous permet de créer des composant réutilisable, d'abstraire la manipulation du DOM, d'améliorer la lisibilité du code, d'ajouter des interactions, d'intégrer des fonctionnalités et surtout d'optimiser les performances de l'application.
+- @Directive : Utilisation de directives qui nous permet de créer des composant réutilisable, d'abstraire la manipulation du DOM, d'améliorer la lisibilité du code, d'ajouter des interactions, d'intégrer des fonctionnalités et surtout d'optimiser les performances de l'application.
+
+- Création de Pipes personnalisé.
