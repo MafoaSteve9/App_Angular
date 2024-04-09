@@ -3,13 +3,14 @@ import { POKEMONS } from './mock-pokemon-list';
 import { Pokemon } from './pokemon';
 import { BorderCardDirective } from './border-card.directive';
 import { CommonModule } from '@angular/common';
+import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: 'app.component.html',
-  imports: [BorderCardDirective, CommonModule]
+  imports: [BorderCardDirective, CommonModule, PokemonTypeColorPipe]
 })
 export class AppComponent implements OnInit {
   pokemonList: Pokemon[] = POKEMONS;
