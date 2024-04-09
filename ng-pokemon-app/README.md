@@ -29,4 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 - @Directive : Utilisation de directives qui nous permet de créer des composant réutilisable, d'abstraire la manipulation du DOM, d'améliorer la lisibilité du code, d'ajouter des interactions, d'intégrer des fonctionnalités et surtout d'optimiser les performances de l'application.
 
+- @Pipe : Les pipes sont des fonctions simples à utiliser dans les modèles pour accepter une valeur d'entrée et renvoyer une valeur transformée. Les pipes sont utiles car vous pouvez les utiliser dans toute votre application, tout en ne déclarant chaque pipe qu'une seule fois.
 - Création de Pipes personnalisé.
