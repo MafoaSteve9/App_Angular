@@ -17,6 +17,7 @@ export class ListPokemonComponent {
 
   constructor(private router: Router) {}
 
+  
   goToPokemon(pokemon: Pokemon) {
     this.router.navigate(['/pokemon/', pokemon.id]);
   }
